@@ -1,0 +1,11 @@
+package com.care.root.file.service;
+
+import org.springframework.stereotype.Service;
+
+
+
+@Service
+public interface FileService {
+	public void upload(FileDTO dto);
+	public String itemview(int filen);
+}

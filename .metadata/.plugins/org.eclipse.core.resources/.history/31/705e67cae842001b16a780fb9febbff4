@@ -1,0 +1,17 @@
+package com.care.root.item.config;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+	@RequestMapping("seller")
+public class itemConfig {
+	@RequestMapping("itemView")
+	public String itemView() {
+		return "/seller/itemView";
+}
+	@RequestMapping("itemList")
+	public String ItemListView() {
+		return "/seller/list";
+	}
+}

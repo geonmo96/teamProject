@@ -1,0 +1,16 @@
+<%@page import="com.care.root.file.service.FileDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%FileDTO dto = new FileDTO(); 
+int fileListNum = %>
+<a href="/seller/itemView/itme?=<%=dto.getItemNum() %>"><img src=" <%=dto.getItemNum() %>.jpg"></a>
+
+</body>
+</html>

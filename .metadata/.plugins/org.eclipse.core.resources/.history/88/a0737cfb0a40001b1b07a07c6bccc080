@@ -1,0 +1,24 @@
+package com.care.root.file.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+
+@Service
+public class FileServiceImpl implements FileService{
+	@Autowired
+	FileDAO dao;
+
+	@Override
+	public void upload(FileDTO dto) {
+		dao.fileAdd(dto);
+		}
+
+	@Override
+	public String itemview(int filen) {
+		FileDTO dto = dao.itemview(filen);
+		dto.ge
+		return null;
+	}
+}

@@ -23,8 +23,7 @@ body {
 
 	<c:set var="path" value="${pageContext.request.contextPath }"/>
 <h3>상품 등록</h3>
-<form action="${path }/upload" 
-				method="post" enctype="multipart/form-data">
+<form action="${path}/seller/upload" method="post" enctype="multipart/form-data">
 	<label>상품명 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
 	</label><input type="text" name="itemName"><br>
 	<label>제조사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
