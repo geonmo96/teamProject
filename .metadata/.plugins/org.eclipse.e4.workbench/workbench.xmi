@@ -88,9 +88,8 @@
           <tags>persp.actionSet:ajelementCreation</tags>
           <tags>persp.newWizSC:ajaspectwizard</tags>
           <tags>persp.perspSC:org.eclipse.ajdt.ui.visualiser.AspectVisualizationPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_fSWvhULzEeuYLMJThLXwNA" selectedElement="_fSWvhkLzEeuYLMJThLXwNA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_fSWvhULzEeuYLMJThLXwNA" selectedElement="_fSWvi0LzEeuYLMJThLXwNA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_fSWvhkLzEeuYLMJThLXwNA" elementId="topLeft" containerData="1880" selectedElement="_fSWvh0LzEeuYLMJThLXwNA">
-              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_fSWvh0LzEeuYLMJThLXwNA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_fSXX90LzEeuYLMJThLXwNA" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -219,6 +218,7 @@
       <children xsi:type="basic:PartStack" xmi:id="_fSXXzkLzEeuYLMJThLXwNA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_fSXX0ELzEeuYLMJThLXwNA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_fSXXz0LzEeuYLMJThLXwNA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="init.js" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;init.js&quot; partName=&quot;init.js&quot; title=&quot;init.js&quot; tooltip=&quot;teamproject/.metadata/.plugins/org.eclipse.wildwebdeveloper.embedder.node/node-v12.16.1-win-x64/node_modules/npm/node_modules/promzard/example/npm-init/init.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teamproject/.metadata/.plugins/org.eclipse.wildwebdeveloper.embedder.node/node-v12.16.1-win-x64/node_modules/npm/node_modules/promzard/example/npm-init/init.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;6&quot; selectionOffset=&quot;1051&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -226,10 +226,12 @@
           <tags>org.eclipse.ui.DefaultTextEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_fSXX0ELzEeuYLMJThLXwNA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="FileUpload.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileUpload.java&quot; partName=&quot;FileUpload.java&quot; title=&quot;FileUpload.java&quot; tooltip=&quot;teamproject/src/main/java/com/care/root/fileconfig/FileUpload.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teamproject/src/main/java/com/care/root/fileconfig/FileUpload.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2606&quot; selectionTopPixel=&quot;254&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileUpload.java&quot; partName=&quot;FileUpload.java&quot; title=&quot;FileUpload.java&quot; tooltip=&quot;teamproject/src/main/java/com/care/root/fileconfig/FileUpload.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teamproject/src/main/java/com/care/root/fileconfig/FileUpload.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2385&quot; selectionTopPixel=&quot;254&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_fSXX1ELzEeuYLMJThLXwNA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="FileDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileDAO.java&quot; partName=&quot;FileDAO.java&quot; title=&quot;FileDAO.java&quot; tooltip=&quot;teamproject/src/main/java/com/care/root/file/service/FileDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teamproject/src/main/java/com/care/root/file/service/FileDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;520&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -383,8 +385,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1607703284177&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_fSXX-ELzEeuYLMJThLXwNA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -531,7 +531,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fSXYiELzEeuYLMJThLXwNA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RbJ0UEVSEeucRsUg5_fFfg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_fSZ1c0LzEeuYLMJThLXwNA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_esUcgEVfEeuOrJzBMuAf-Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_fSZ1c0LzEeuYLMJThLXwNA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fSXYlULzEeuYLMJThLXwNA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -571,7 +571,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fSX9pELzEeuYLMJThLXwNA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RbNesEVSEeucRsUg5_fFfg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_fSZ1GELzEeuYLMJThLXwNA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_esYG4EVfEeuOrJzBMuAf-Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_fSZ1GELzEeuYLMJThLXwNA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fSX9sULzEeuYLMJThLXwNA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
