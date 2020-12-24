@@ -19,19 +19,39 @@
 <body onload="message()">
 	<jsp:include page="../default/header.jsp"></jsp:include>
 	<div>
+<<<<<<< HEAD
 		<form action="login" method="post">
 		<table>
 			<tr> 
 				<td> 
 					
+=======
+		<div>
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=b7c160fc4b5f9830243927d9a94aea71&redirect_uri=http://localhost:8080/root/member/loginKakao&response_type=code">
+				<img width="165px" src="${pageContext.request.contextPath}/resources/images/kakao_btn.png">
+			</a>
+			<a href="createNaverState">
+				<img width="165px" src="${pageContext.request.contextPath}/resources/images/naver_btn.PNG">
+			</a>
+		</div>
+		<form action="login" method="post">
+		<table>
+			<tr> 
+				<td> 					
+>>>>>>> 0d8c48a5ad6ea9e134a0642059c42ac90b4404a2
 					<input type="text" name="id" placeholder="아이디"> 
 				</td> 
 			</tr>
 			<tr> <td> <input type="password" name="pw" placeholder="비밀번호"> </td> </tr>
 			<tr> <td> <input type="submit" value="로그인"> </td> </tr> 
 				
+<<<<<<< HEAD
 			<tr> <td> <a href="#">아이디 찾기</a> </td> <td> <a href="#">비밀번호 찾기</a> </td> </tr> 
 			<tr> <td> <a href="signupForm">회원가입</a>
+=======
+			<tr> <td> <a href="findIdEmail">아이디 찾기</a> </td> <td> <a href="findPwEmail">비밀번호 찾기</a> </td> </tr> 
+			<tr> <td> <a href="join">회원가입</a>
+>>>>>>> 0d8c48a5ad6ea9e134a0642059c42ac90b4404a2
 		</table>
 		</form>
 	</div>

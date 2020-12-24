@@ -52,8 +52,13 @@
 
 <!-- login filter -->
 	
+<<<<<<< HEAD
 
 <!--  <filter-mapping>	
+=======
+ <!-- 
+<filter-mapping>	
+>>>>>>> 0d8c48a5ad6ea9e134a0642059c42ac90b4404a2
   <filter-name>WebFilter</filter-name>	
   <url-pattern>/*</url-pattern>	
 </filter-mapping>
@@ -62,8 +67,15 @@
   <filter-class>com.care.root.member.filter.WebFilter</filter-class>	
   <init-param>	
     <param-name>passPage</param-name>	
+<<<<<<< HEAD
     <param-value>/,/member/loginForm,/member/login,/member/signupForm,/member/signup,/member/dbIdCheck</param-value>	
   </init-param>	
 </filter>-->
 
+=======
+    <param-value>/,/member/loginForm,/member/login,/member/signupForm,/member/signup,/member/dbIdCheck,/member/loginKakao</param-value>	
+  </init-param>	
+</filter>
+ -->
+>>>>>>> 0d8c48a5ad6ea9e134a0642059c42ac90b4404a2
 </web-app>
