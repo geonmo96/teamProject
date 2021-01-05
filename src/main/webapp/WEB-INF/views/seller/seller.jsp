@@ -7,14 +7,6 @@
 <meta charset="UTF-8">
 <title>upload Form</title>
 
-<style>
-body {
-
-	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
-
-	font-size: 80%;
-}
-</style>
 </head>
 <body>
 	<%response.setCharacterEncoding("utf-8");
@@ -32,7 +24,12 @@ body {
 	</select><br>
 	<label>상품명 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
 	</label><input type="text" name="itemName"><br>
-	<label>제조사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+	<label>제조사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+	
+	
+	
+	
+	;&nbsp;&nbsp;&nbsp;:
 	 </label><input type="text" name="makerName"><br>
 	<label>브랜드 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
 	</label><input type="text" name="brandName"><br>

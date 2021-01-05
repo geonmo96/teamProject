@@ -951,5 +951,7 @@ c. 그 외 회사가 정한 안전거래 이용규칙을 위반한 경우
 		</textarea>
 	</div>
 	[출처] 11번가(https://www.11st.co.kr/register/prvtSellerRegistOneIDForm.page#focus_topAgree)
+	
+<jsp:include page="../default/footer.jsp"></jsp:include>
 </body>
 </html>

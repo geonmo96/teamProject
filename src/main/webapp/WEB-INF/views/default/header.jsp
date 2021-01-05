@@ -28,14 +28,12 @@ a:hover {
  	display:table-cell;
  	vertical-align: middle;
  }
-
- 
  
 </style>
 </head>
 <body>
 	<div>
-		<table width="100%" background="../resources/images/header_b.JPG">
+		<table width="100%" background="">
 			<tr>
 				<td width="30%"></td>
 				<td align="center" width="30%">
@@ -47,12 +45,13 @@ a:hover {
 					<c:choose>
 						<c:when test="${sessionScope.USER == null}">
 							<a href="${pageContext.request.contextPath }/member/loginForm">로그인</a>&nbsp;&nbsp;
-							<a href="${pageContext.request.contextPath }/member/signupSelect">회원가입</a>&nbsp;&nbsp;
+						<a href="${pageContext.request.contextPath }/member/signupSelect">회원가입</a>&nbsp;&nbsp;
+
 					</c:when>
 					<c:otherwise>
 						${sessionScope.USER }님&nbsp;&nbsp;
 						<c:if test="${sessionScope.sales == 'sales member' }">
-							<a href="#">상품 등록</a>&nbsp;&nbsp;
+							<a href="${pageContext.request.contextPath }/seller/form">상품 등록</a>&nbsp;&nbsp;
 						</c:if>
 						<a href="${pageContext.request.contextPath }/member/myInfo">마이페이지</a>&nbsp;&nbsp;
 						<a href="${pageContext.request.contextPath }/member/logout">로그아웃</a>
@@ -64,9 +63,9 @@ a:hover {
 		<div class="menu">	
 		<p class="menu_list">
 		<b>
-			<a href="#">산지직송</a>&nbsp;&nbsp;
-			<a href="#">지역명물</a>&nbsp;&nbsp;
-			<a href="#">차&음료</a>&nbsp;&nbsp;
+			<a href="${pageContext.request.contextPath }/item/catelist?cate=1">산지직송</a>&nbsp;&nbsp;
+			<a href="${pageContext.request.contextPath }/item/catelist?cate=2">지역명물</a>&nbsp;&nbsp;
+			<a href="${pageContext.request.contextPath }/item/catelist?cate=3">차&음료</a>&nbsp;&nbsp;
 			<a href="#">묻고 답하기</a>&nbsp;&nbsp;
 			<a href="${pageContext.request.contextPath }/board/listView">공지사항</a>&nbsp;&nbsp;
 			<a href="#">리뷰이벤트</a>&nbsp;&nbsp;
@@ -76,5 +75,6 @@ a:hover {
 		</p>
 		</div>
 	</div>
+	<br><br>
 </body>
 </html>

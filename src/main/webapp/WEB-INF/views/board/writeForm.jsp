@@ -20,13 +20,44 @@
 		}
 	}
 </script>
+
+<style type="text/css">
+table {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+</style>
 </head>
 <body>
 	<jsp:include page="../default/header.jsp"></jsp:include>
+	<div style="padding: 10px 10% 0px 10%;">
 	<form action="write" method="post" id="fo">
-		<input type="text" name="title" id="title" placeholder="공지사항 제목을 입력하세요"><br>
-		<input type="text" name="content" id="content" placeholder="공지사항 내용을 입력하세요"><br>
-		<input type="button" value="공지사항 작성" onclick="writeNotice()">	
+	<table>
+	<tr>
+		<td>제 목</td>
+		<td width="80%">
+		<textarea rows="1" cols="70" name="title" id="title" placeholder="공지사항 제목을 입력하세요"></textarea></td>		
+	</tr>
+	
+	<tr>
+		<td>내 용</td>
+		<td>
+		<textarea rows="10" cols="70" name="content" id="content" placeholder="공지사항 내용을 입력하세요"></textarea>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" style="text-align:center;">
+		<br>
+		<input type="button" value="공지사항 작성" onclick="writeNotice()"></td>
+	</tr>
+	
+	</table>
+		
+		
+			
 	</form>
+	</div>
 </body>
 </html>
