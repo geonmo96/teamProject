@@ -12,7 +12,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="path" value="${pageContext.request.contextPath }"/>
 	<%FileDTO fdto =(FileDTO)request.getAttribute("fdto"); %>
-	<table border="1">
+	<img src="../../img/<%=fdto.getItemNum()%>.jpg" style="width:80%; margin: 0 auto;" >
+	<h1>상품 설명</h1>
+	<hr color="#BDBDBD" width="80%">
+	<table>
 	<tr><td>카테고리</td><td><% 
 	if(fdto.getCategorynum() == 1){
 		%>육지<%
@@ -25,14 +28,10 @@
 	};
 							%></td></tr>
 	
-	<tr><td>상품번호</td><td><%=fdto.getItemNum() %></td></tr>
-	<tr><td>상품명</td><td><%=fdto.getItemName() %></td></tr>
-	<tr><td>상품금액</td><td><%=fdto.getItemprice() %>원</td></tr>
-	<tr><td>제조사</td><td><%=fdto.getMakerName() %></td></tr>
-	<tr><td>브랜드</td><td><%=fdto.getBrandName() %></td></tr>
-	<tr><td>제조국</td><td><%=fdto.getMakeRegion() %></td></tr>
-	<tr><td>원산지</td><td><%=fdto.getItemRegion() %></td></tr>
-	<tr><td>총중량</td><td><%=fdto.getKg() %>
+	<tr><td>상품번호</td><td><%=fdto.getItemNum() %></td><td>상품명</td><td><%=fdto.getItemName() %></td></tr>
+	<tr><td>상품금액</td><td><%=fdto.getItemprice() %>원</td><td>제조사</td><td><%=fdto.getMakerName() %></td></tr>
+	<tr><td>브랜드</td><td><%=fdto.getBrandName() %></td>><td>제조국</td><td><%=fdto.getMakeRegion() %></td></tr>
+	<tr><td>원산지</td><td><%=fdto.getItemRegion() %></td><td>총중량</td><td><%=fdto.getKg() %>
 	<%if(fdto.getKgpic() == 1){
 		%>g<%
 	}
