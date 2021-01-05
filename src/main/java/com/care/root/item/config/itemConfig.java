@@ -38,6 +38,8 @@ public class itemConfig {
 		model.addAttribute("allnum",allnum);
 		ArrayList<String> alllist = fsvi.fileallnum();
 		model.addAttribute("alllist",alllist);
+		ArrayList<String> namelist = fsvi.nameall();
+		model.addAttribute("allname",namelist);
 		return "item/list";
 	}
 	@RequestMapping("result")
@@ -51,6 +53,8 @@ public class itemConfig {
 		model.addAttribute("allnum",allnum);
 		ArrayList<String> catealllist = fsvi.categorylist(cate);
 		model.addAttribute("alllist",catealllist);
+		ArrayList<String> catename = fsvi.catename(cate);
+		model.addAttribute("allname",catename);
 		return "item/list";
 		
 	}

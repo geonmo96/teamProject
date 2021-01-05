@@ -14,10 +14,18 @@
  	
 	<jsp:include page="../default/header.jsp"></jsp:include>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-	<table border = "1">
+	<h1 style="margin: 0 0 0 10%">상품 목록</h1>
+	<hr color="#BDBDBD" width="80%">
+	<table style="margin: 0 0 0 10%; width: 80%; ">
+	<c:set var="count">1</c:set>
 	<c:forEach var="item" items="${alllist }" begin="0" end="${allnum }" varStatus="number">
-	<td><a href="itemview?itemnum=${alllist.get(number.index)}"> <img src="../../img/${alllist.get(number.index)}.jpg" style="width:150px;" ></a></td>
+	<td><a href="itemview?itemnum=${alllist.get(number.index)}"> <img src="../../img/${alllist.get(number.index)}.jpg" style="width:150px; height: 150px" >
+	${allname.get(number.index)}
+	</a></td>
+	<c:if test="${count%3 == 0 }"><tr></c:if>
+	<c:set var="count">${count+1 }</c:set>
 	</c:forEach>
 	</table>
+	<hr color="#BDBDBD" width="80%">
 </body>
 </html>

@@ -15,4 +15,6 @@ public interface FileService {
 	String itemresult(String itemname);
 	public ArrayList<String> categorylist(String cate);
 	public int catelist(String cate);
+	public ArrayList<String> nameall();
+	public ArrayList<String> catename(String cate);
 }

@@ -63,4 +63,14 @@ public class FileServiceImpl implements FileService{
 		result = itemlist.size();
 		return result;
 	}
+	@Override
+	public ArrayList<String> nameall(){
+		ArrayList<String> nameall = dao.namelist();
+		return nameall;
+	}
+	@Override
+	public ArrayList<String> catename(String cate) {
+		ArrayList <String> catename =  dao.categoryname(cate);
+		return catename;
+	}
 }
