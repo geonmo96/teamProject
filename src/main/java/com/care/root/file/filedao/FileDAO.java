@@ -25,6 +25,10 @@ public interface FileDAO {
 		
 		@Select("select itemnum from itemlist where categorynum = #{category}")
 		public ArrayList<String> categoryView(String category);
-
-
+		
+		@Select("select itemname from itemlist")
+		public ArrayList<String> namelist();
+		
+		@Select("select itemname from itemlist where categorynum = #{category}")
+		public ArrayList<String> categoryname(String category);
 }
