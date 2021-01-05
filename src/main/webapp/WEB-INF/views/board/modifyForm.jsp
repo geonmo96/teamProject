@@ -50,11 +50,6 @@
 	<jsp:include page="../default/header.jsp"></jsp:include>
 	<form action="modify" method="post" id="fo">
 		<input type="hidden" name="write_no" value="${boardDto.write_no }">
-<<<<<<< HEAD
-		<input type="text" name="title" id="title" value="${boardDto.title }"><br>
-		<textarea rows="50" cols="100" name="content" id="content">${boardDto.content }</textarea>
-		<input type="button" onclick="checkBlank()" value="공지사항 수정">
-=======
 		<div style="width: 60%; margin: 0 auto;">
 			<h3>공지사항 수정</h3>
 			<hr color="#000000">
@@ -64,7 +59,6 @@
 				<input type="button" onclick="checkBlank()" value="공지사항 수정" class="button button1">
 			</div>
 		</div>
->>>>>>> 88fe3b96b5a90f78ce0103b4c320956359edd75e
 	</form>
 </body>
 </html>
