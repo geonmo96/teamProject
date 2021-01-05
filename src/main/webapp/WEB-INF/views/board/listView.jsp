@@ -51,6 +51,7 @@
 			<tr>
 				<td colspan="3"> <h3>공지사항</h3> <hr color="#000000"> </td>
 			</tr>
+<<<<<<< HEAD
 			<tr> <th width="20%" align="center">제목</th> <th width="60%" align="center">조회수</th> <th width="20%" align="center">작성일</th> </tr>
 			<c:forEach items="${list }" var="boardDto">
 				<tr> <td colspan="3"><hr color="#BDBDBD"></td> </tr>
@@ -63,6 +64,25 @@
 			<tr> <td colspan="3"><hr color="#BDBDBD"></td> </tr>
 			<tr>
 				<td>페이징 처리</td>
+=======
+			<tr> <th width="20%" align="center">조회수</th> <th width="60%" align="center">제목</th> <th width="20%" align="center">작성일</th> </tr>
+			<c:forEach items="${list }" var="boardDto">
+				<tr> <td colspan="3"><hr color="#EAEAEA"></td> </tr>
+				<tr>
+					<td align="center">${boardDto.hit }</td>
+					<td align="center"><a href="contentView?write_no=${boardDto.write_no }">${boardDto.title }</a></td>
+					
+					<td align="center">${boardDto.savedate }</td>
+				</tr>
+			</c:forEach>
+			<tr> <td colspan="3"><hr color="#EAEAEA"></td> </tr>
+			<tr>
+				<td colspan="3" align="center">
+					<c:forEach begin="1" end="${totalPage }" var="page">
+						<a href="listView?page=${page }">${page }</a> &nbsp;
+					</c:forEach>
+				</td>
+>>>>>>> 88fe3b96b5a90f78ce0103b4c320956359edd75e
 			</tr>
 			<tr> <td colspan="3"><hr color="#000000"></td> </tr>
 			<c:if test="${sessionScope.admin == 'admin' }">

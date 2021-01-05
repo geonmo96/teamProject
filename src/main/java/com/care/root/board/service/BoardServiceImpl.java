@@ -13,11 +13,32 @@ import com.care.root.board.dto.BoardDTO;
 public class BoardServiceImpl {
 	@Autowired BoardDAO boardDao;
 	
+<<<<<<< HEAD
 	public void listView(Model model) {
 		ArrayList<BoardDTO> list = boardDao.listView();
 		model.addAttribute("list", list);
 		model.addAttribute("totalContent", boardDao.totalContent());
 		System.out.println(boardDao.totalContent() /10 + 1);
+=======
+	public void listView(Model model, int page) {
+		int pageLetter = 10;
+		int allCount = boardDao.totalContent();
+		int totalPage = allCount / pageLetter;
+		if(allCount % pageLetter != 0) { 
+			totalPage += 1; 
+		}
+		int end = page*pageLetter;
+		int start = end + 1 - pageLetter;
+		model.addAttribute("totalPage", totalPage);
+		model.addAttribute("list", boardDao.listView(start, end));
+		
+		
+		
+		
+		
+		
+		
+>>>>>>> 88fe3b96b5a90f78ce0103b4c320956359edd75e
 	}
 	
 	public void contentView(Model model, String write_no) {
