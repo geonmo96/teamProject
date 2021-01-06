@@ -20,6 +20,9 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public void join(MemberDTO dto) {
 		dao.join(dto);
+		if(dto.getMember_code().equals("200")) {
+			dao.joinSales(dto);
+		}
 	}
 	@Override
 	public String dbIdCheck(String id) {
@@ -45,13 +48,20 @@ public class MemberServiceImpl implements MemberService{
 			//TODO 메인페이지 수정 예정
 			HttpSession session = request.getSession();
 			session.setAttribute("USER", dbDto.getId());
+			session.setAttribute("login", "local");
+			if(dbDto.getMember_code().equals("200") || dbDto.getMember_code().equals("1000")) {
+				session.setAttribute("sales", "sales member");
+			}
+			if(dbDto.getMember_code().equals("1000")) {
+				session.setAttribute("admin", "admin");
+			}
 			return "main";
 		}
 	}
 	@Override
 	public void logout(HttpServletRequest request) {
 		HttpSession session = (HttpSession) request.getSession();
-		session.removeAttribute("USER");
+		session.invalidate();
 	}
 	@Override
 	public void checkEmail(String name, String email, Model model) {
@@ -71,21 +81,33 @@ public class MemberServiceImpl implements MemberService{
 		}
 	}
 	@Override
-	public void checkId(String name, String id, Model model) {
+	public String checkId(String name, String id, Model model, String method, HttpServletRequest request) {
 		MemberDTO dto = null;
 		dto = dao.selectId(id);
 		model.addAttribute("toDo", "findPw");
 		if(dto == null) {
 			model.addAttribute("message", "입력하신 아이디는 없는 아이디입니다");
 			model.addAttribute("code", 0);
+			return "0";
 		} else if(!dto.getName().equals(name)) {
 			model.addAttribute("message", "회원정보가 일치하지 않습니다");
 			model.addAttribute("code", 0);
+			return "-1";
 		} else {
-			model.addAttribute("message", "메일이 전송되었습니다");
-			model.addAttribute("code", ms.sendCode(dto.getEmail()));
 			model.addAttribute("id", dto.getId());
+			if(method.equals("email")) {
+				model.addAttribute("code", ms.sendCode(dto.getEmail()));
+				model.addAttribute("message", "메일이 전송되었습니다");
+				return "1";
+			} else if(method.equals("tel")) {
+				HttpSession session = request.getSession();
+				session.setAttribute("authCode", send6Num(dto.getM_tel()));
+				session.setAttribute("id", dto.getId());
+				session.setAttribute("find", "pw");
+				return "1";
+			}
 		}
+		return "-1";
 	}
 	@Override
 	public void modifyPw(String id, String pw) {
@@ -112,5 +134,27 @@ public class MemberServiceImpl implements MemberService{
 			session.setAttribute("UserId", dbDto.getId());
 			return "1";
 		}
+	}
+	@Override
+	public void setInfo(HttpServletRequest request, Model model) {
+		HttpSession session = request.getSession();
+		model.addAttribute("dto", dao.selectId((String)session.getAttribute("USER")));
+	}
+	@Override
+	public String checkIdPw(MemberDTO dto) {
+		MemberDTO dbDto = dao.selectId(dto.getId());
+		if(dbDto == null) {
+			return "-1";
+		} else if(!dbDto.getPw().equals(dto.getPw())) {
+			return "0";
+		} else {
+			return "1";
+		}
+	}
+	@Override
+	public void secession(String id, HttpServletRequest request) {
+		dao.secession(id);
+		HttpSession session = request.getSession();
+		session.invalidate();
 	}
 }

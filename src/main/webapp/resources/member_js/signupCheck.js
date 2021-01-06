@@ -20,9 +20,11 @@
 		if(chk1.checked != true || chk2.checked != true){
 			alert("필수 약관에 동의해주세요")
 		} else {
-			location.href="signupForm";
+			location.href="signupForm?member_code=100";
 		}
 	}
+
+	
 	var telAuthCodeCheck = false;
 	function chkCheck(){
 		if(!idCheck()){
