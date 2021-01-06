@@ -27,5 +27,6 @@
 	</c:forEach>
 	</table>
 	<hr color="#BDBDBD" width="80%">
+	<jsp:include page="../default/footer.jsp"></jsp:include>
 </body>
 </html>

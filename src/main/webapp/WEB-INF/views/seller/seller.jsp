@@ -46,6 +46,6 @@
 	<input type="submit" value="업로드">
 </form>
 
-
+<jsp:include page="../default/footer.jsp"></jsp:include>
 </body>
 </html>

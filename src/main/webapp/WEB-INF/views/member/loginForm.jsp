@@ -75,5 +75,6 @@
 			<tr> <td colspan="2" align="center"> <a href="signupSelect">회원가입</a>
 		</table>
 	</form>
+	<jsp:include page="../default/footer.jsp"></jsp:include>
 </body>
 </html>

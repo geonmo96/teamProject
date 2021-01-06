@@ -6,6 +6,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button1 {
+	background-color: #555555;
+	color: white;
+}
+
+.button1:hover {
+	background-color: black;
+	color: white;
+}
+</style>
 </head>
 <body>
 <jsp:include page="../default/header.jsp"></jsp:include>
@@ -45,10 +70,12 @@
 	};%>
 	</td></tr>
 	<tr><th>상품설명</th><td><textarea rows="10" cols="60" readonly="readonly"><%=fdto.getItemValue() %></textarea></td></tr>
-	<tr><th><a href="#">구매</a></th><th><a href="#">장바구니</a></th><th><a href=../item/list>목록보기</a></th></tr>
+	<tr><th><a href="#" class="button button1">구매</a></th><th></th><th><a href="../item/list" class="button button1" >목록보기</a></th></tr>
 	
 
 
-	</table>	
+	</table>
+	<hr color="#BDBDBD" width="80%">	
+	<jsp:include page="../default/footer.jsp"></jsp:include>
 </body>
 </html>

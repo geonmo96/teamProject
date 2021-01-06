@@ -35,12 +35,12 @@ a:hover {
 </head>
 <body>
 	<div>
-		<table width="100%" background="../resources/images/header_b.JPG">
+		<table width="100%">
 			<tr>
 				<td width="30%"></td>
 				<td align="center" width="30%">
 					<a href="#" width="40%">
-						<img src="../resources/images/logo.png" height="100px">
+						<h1>Re: direct</h1>
 					</a>
 				</td>
 				<td align="right" valign="top" width="30%">
