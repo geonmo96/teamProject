@@ -11,19 +11,16 @@
 		location.href="writeForm";
 	}
 </script>
-<<<<<<< HEAD
 
-<style type="text/css">
-table {
-	width: 90%;
-	margin: auto;
-	text-align: center;
-}
-=======
 <style type="text/css">
 	.board{
 		width: 80%;
 		margin: 0 auto;
+	}
+	table{
+		width : 90%;
+		margin: auto;
+		text-align: center;
 	}
 	
 	.button {
@@ -50,24 +47,12 @@ table {
 		color: white;
 	}
 		
->>>>>>> 57ed98fe1f08d4128a30327099bc0a6751a41162
+
 </style>
 </head>
 <body>
 	<jsp:include page="../default/header.jsp"></jsp:include>
-<<<<<<< HEAD
-	<div style="padding: 10px 10% 0px 10%;">
-	<h2>공지사항</h2>
-	<hr>
-		<table> 			  
-			<tr>
-				<th height="30px">번호</th>
-				<th width="50%">제목</th>
-				<th>조회수</th>
-				<th>작성일</th>
-			</tr>
-			
-=======
+
 	<c:set var="page" value="${totalContent / 10 }"></c:set>
 	<div>
 		<table class="board">
@@ -75,7 +60,6 @@ table {
 				<td colspan="3"> <h3>공지사항</h3> <hr color="#000000"> </td>
 			</tr>
 			<tr> <th width="20%" align="center">조회수</th> <th width="60%" align="center">제목</th> <th width="20%" align="center">작성일</th> </tr>
->>>>>>> 57ed98fe1f08d4128a30327099bc0a6751a41162
 			<c:forEach items="${list }" var="boardDto">
 				<tr> <td colspan="3"><hr color="#EAEAEA"></td> </tr>
 				<tr>
